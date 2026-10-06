@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyFlow — Планировщик задач студента</title>
+    <meta
+      name="description"
+      content="StudyFlow — удобный планировщик задач для студентов: дедлайны, приоритеты, календарь, напоминания и контроль учебных целей."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <span class="logo-mark">S</span>
+          <span>StudyFlow</span>
+        </div>
+        <nav class="menu">
+          <a href="#problem">Проблема</a>
+          <a href="#users">Пользователи</a>
+          <a href="#features">Функции</a>
+          <a href="#preview">Интерфейс</a>
+          <a href="#cost">Стоимость</a>
+        </nav>
+        <a class="btn btn-primary" href="#contact">Попробовать</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Планировщик задач для студентов</span>
+            <h1>Организуйте учёбу без хаоса и пропущенных дедлайнов</h1>
+            <p>
+              StudyFlow помогает студентам планировать задания, контролировать
+              приоритеты и не забывать про важные сроки. Всё в одном удобном
+              приложении — чтобы можно было учиться спокойно и эффективно.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#features">Смотреть функции</a>
+              <a class="btn btn-secondary" href="#preview">Посмотреть интерфейс</a>
+            </div>
+            <ul class="stats">
+              <li>
+                <strong>3x</strong>
+                <span>быстрее планирование</span>
+              </li>
+              <li>
+                <strong>2.5k+</strong>
+                <span>задач в неделю</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span>напоминания</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-header">
+              <span class="dot dot-blue"></span>
+              <span class="dot dot-purple"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="task-list">
+              <div class="task-row task-important">
+                <div>
+                  <p class="task-title">Курсовая по ИИ</p>
+                  <small>Сегодня, 18:00</small>
+                </div>
+                <span class="badge badge-red">Высокий</span>
+              </div>
+              <div class="task-row">
+                <div>
+                  <p class="task-title">Лабораторная по физике</p>
+                  <small>Завтра, 10:30</small>
+                </div>
+                <span class="badge badge-yellow">Средний</span>
+              </div>
+              <div class="task-row">
+                <div>
+                  <p class="task-title">Подготовка к экзамену</p>
+                  <small>Пятница, 16:00</small>
+                </div>
+                <span class="badge badge-green">Низкий</span>
+              </div>
+            </div>
+            <div class="analytics-box">
+              <div>
+                <span class="label">Завершено</span>
+                <strong>68%</strong>
+              </div>
+              <div class="progress">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="section section-light">
+        <div class="container two-col">
+          <div>
+            <span class="section-tag">Проблема</span>
+            <h2>Студенты теряют время на учёбу из-за хаоса в планировании</h2>
+          </div>
+          <div class="text-block">
+            <p>
+              У многих студентов есть десятки задач: домашние задания, лекции,
+              лабораторные, экзамены и проекты. Они разбросаны по заметкам,
+              сообщениям и календарям, что приводит к пропущенным дедлайнам,
+              перегрузке и стрессу.
+            </p>
+            <p>
+              StudyFlow решает эту проблему, объединяя всё в одном месте и помогая
+              грамотно расставлять приоритеты.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="users" class="section">
+        <div class="container">
+          <span class="section-tag">Пользователи</span>
+          <h2>Кому подходит приложение</h2>
+          <div class="cards users-grid">
+            <article class="card">
+              <div class="icon-wrap primary">🎓</div>
+              <h3>Студенты бакалавриата</h3>
+              <p>Планирование заданий, контроль дедлайнов и экзаменов.</p>
+            </article>
+            <article class="card">
+              <div class="icon-wrap purple">📚</div>
+              <h3>Магистранты</h3>
+              <p>Управление проектами, научной работой и сроками по дисциплинам.</p>
+            </article>
+            <article class="card">
+              <div class="icon-wrap green">🧠</div>
+              <h3>Школьники</h3>
+              <p>Организация подготовки к контрольным, олимпиадам и экзаменам.</p>
+            </article>
+            <article class="card">
+              <div class="icon-wrap orange">👩‍🏫</div>
+              <h3>Преподаватели</h3>
+              <p>Контроль учебных задач, сроков и важности заданий для групп.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section section-light">
+        <div class="container">
+          <span class="section-tag">Функции</span>
+          <h2>Основные возможности приложения</h2>
+          <div class="cards features-grid">
+            <article class="card feature-card">
+              <div class="feature-icon">✓</div>
+              <h3>Создание задач</h3>
+              <p>Добавление заметок, сроков, категорий и описания к любому заданию.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="feature-icon">⏰</div>
+              <h3>Напоминания</h3>
+              <p>Автоматические уведомления за день, за час и в момент дедлайна.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="feature-icon">📅</div>
+              <h3>Календарь</h3>
+              <p>Просмотр задач по дням, неделям и месяцам для лучшего планирования.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="feature-icon">⭐</div>
+              <h3>Приоритеты</h3>
+              <p>Маркировка задач по важности: срочно, важно, можно позже.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Статистика</h3>
+              <p>Анализ выполненных действий, продуктивности и объёма учебной нагрузки.</p>
+            </article>
+            <article class="card feature-card">
+              <div class="feature-icon">🔔</div>
+              <h3>Синхронизация</h3>
+              <p>Сохранение данных и доступ к задачам с разных устройств.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="preview" class="section preview-section">
+        <div class="container preview-wrap">
+          <div class="preview-copy">
+            <span class="section-tag">Внешний вид</span>
+            <h2>Пример главного экрана приложения</h2>
+            <p>
+              Интерфейс выполнен в минималистичном стиле: быстрый доступ к задачам,
+              удобное распределение по приоритетам и понятная визуальная навигация.
+            </p>
+          </div>
+
+          <div class="app-mockup" aria-label="Макет главного экрана приложения">
+            <div class="mockup-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mockup-body">
+              <aside class="mockup-sidebar">
+                <div class="menu-item active">Главная</div>
+                <div class="menu-item">Календарь</div>
+                <div class="menu-item">Задачи</div>
+                <div class="menu-item">Отчёты</div>
+              </aside>
+              <div class="mockup-content">
+                <div class="panel-head">
+                  <h4>Сегодня</h4>
+                  <button>+ Добавить</button>
+                </div>
+                <div class="task-item urgent">
+                  <span class="check"></span>
+                  <div>
+                    <strong>Курсовая по ИИ</strong>
+                    <small>18:00</small>
+                  </div>
+                </div>
+                <div class="task-item">
+                  <span class="check"></span>
+                  <div>
+                    <strong>Лабораторная по физике</strong>
+                    <small>Завтра</small>
+                  </div>
+                </div>
+                <div class="task-item">
+                  <span class="check"></span>
+                  <div>
+                    <strong>Подготовка к экзамену</strong>
+                    <small>Пятница</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cost" class="section section-light">
+        <div class="container">
+          <span class="section-tag">Сроки и стоимость</span>
+          <h2>План разработки</h2>
+          <div class="cost-box">
+            <div class="cost-row">
+              <span>Проектирование</span>
+              <strong>20 часов</strong>
+            </div>
+            <div class="cost-row">
+              <span>Дизайн интерфейса</span>
+              <strong>30 часов</strong>
+            </div>
+            <div class="cost-row">
+              <span>Программирование</span>
+              <strong>60 часов</strong>
+            </div>
+            <div class="cost-row">
+              <span>Тестирование</span>
+              <strong>15 часов</strong>
+            </div>
+            <div class="cost-row total">
+              <span>Итого</span>
+              <strong>125 часов</strong>
+            </div>
+            <div class="cost-row total total-price">
+              <span>Ориентировочная стоимость</span>
+              <strong>112 500 ₽</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="logo">
+            <span class="logo-mark">S</span>
+            <span>StudyFlow</span>
+          </div>
+          <p>Приложение для дисциплинированной и спокойной учёбы.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:hello@studyflow.app">Связаться с командой</a>
+      </div>
+      <div class="container footer-copy">
+        <span>© <span id="year"></span> StudyFlow</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
